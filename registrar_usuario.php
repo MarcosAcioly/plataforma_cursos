@@ -25,8 +25,8 @@
                     <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
                         <div class="text-center mb-5">
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-                            <h1 class="fw-bolder">Login</h1>
-                            <p class="lead fw-normal text-muted mb-0">Por favor informe seu email e sua senha</p>
+                            <h1 class="fw-bolder">Cadastre-se</h1>
+                            <p class="lead fw-normal text-muted mb-0">Por favor informe seu nome, email e sua senha</p>
                         </div>
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-8 col-xl-6">
@@ -39,6 +39,14 @@
                                 <!-- to get an API token!-->
                                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                                     
+                                     <!-- Email address input-->
+                                     <div class="form-floating mb-3">
+                                        <input class="form-control" id="nome" type="text" placeholder="Por favor digite seu nome" data-sb-validations="required" />
+                                        <label for="email">Nome</label>
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                        
+                                    </div>
+
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
                                         <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
@@ -59,7 +67,7 @@
                                     <!-- an error submitting the form-->
                                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                     <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Entrar</button></div>
+                                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Cadastre-se</button></div>
                                 </form>
                             </div>
                         </div>
